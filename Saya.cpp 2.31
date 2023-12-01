@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+class ProgrammingLanguage {
+public:
+    ProgrammingLanguage(string name, int year, string creator) {
+        this->name = name;
+        this->year = year;
+        this->creator = creator;
+    }
+    void displayInfo() {
+        cout << "Язык программирования: " << name << endl;
+        cout << "Год создания: " << year << endl;
+        cout << "Создатель: " << creator << endl;
+    }
+
+private:
+    string name;
+    int year;
+    string creator;
+};
+
+int main() {
+    ProgrammingLanguage cpp("C++", 1983, "Бьёрн Страуструп");
+    ProgrammingLanguage python("Python", 1991, "Гвидо ван Россум");
+    cout << "Информация о языке C++:" << endl;
+    cpp.displayInfo();
+    cout << endl;
+
+    cout << "Информация о языке Python:" << endl;
+    python.displayInfo();
+  
+    return 0;
+}
