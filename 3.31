@@ -1,0 +1,280 @@
+import Foundation
+
+
+//1) Составить следующую программу. Программа должна запрашивать месяц и день рождения, далее проходясь по if, else..if, else или switch будет сравнивать число и месяц и если есть  совпадение, то выводить соответствующий знак зодиака в консоли. Например: число 8, месяц октябрь, тогда в консоли ‘Ваш знак зодиака - весы’
+
+//var month1 = "Март"
+//var month2 = "Апрель"
+//var month3 = "Май"
+//var month4 = "Июнь"
+//var month5 = "Июль"
+//var month6 = "Август"
+//var month7 = "Сентябрь"
+//var month8 = "Октябрь"
+//var month9 = "Ноябрь"
+//var month10 = "Декабрь"
+//var month11 = "Январь"
+//var month12 = "Февраль"
+//
+//
+//
+//
+//print("Введите месяц:")
+//var month = readLine()
+//
+//print("Введите день рождения:")
+//var number = Int (readLine()!)!
+//
+//
+//
+//
+//if number <= 21 && month == month1 {
+//    print("Рыбы")
+//}
+//
+//else if number >= 21 && number<=29 && month == month12
+//{
+//    print("Рыбы")
+//}
+//
+//
+//
+//
+//
+//
+//else if number <= 21 && month == month2
+//{
+//    print("Овен")
+//}
+//else if number >= 21 && number<=31 && month == month1
+//{
+//    print("Овен")
+//}
+//
+//
+//
+//else if number <= 20 && month == month3
+//{
+//    print("Телец")
+//}
+//else if number >= 21 && number<=30 && month == month2
+//{
+//    print("Телец")
+//}
+//
+//
+//
+//else if number <= 20 && month == month4
+//{
+//    print("Близнецы")
+//}
+//else if number >= 21 && number<=31 && month == month3
+//{
+//    print("Близнецы")
+//}
+//
+//
+//else if number <= 22 && month == month5
+//{
+//    print("Рак")
+//}
+//else if number >= 21 && number<=30 && month == month4
+//{
+//    print("Рак")
+//}
+//
+//
+//
+//else if number <= 22 && month == month6
+//{
+//    print("Лев")
+//}
+//else if number >= 23 && number<=31 && month == month5
+//{
+//    print("Лев")
+//}
+//
+//
+//else if number <= 22 && month == month7
+//{
+//    print("Дева")
+//}
+//else if number >= 23 && number<=31 && month == month6
+//{
+//    print("Дева")
+//}
+//
+//
+//else if number <= 23 && month == month8
+//{
+//    print("Весы")
+//}
+//else if number >= 22 && number<=30 && month == month7
+//{
+//    print("Весы")
+//}
+//
+//
+//
+//
+//else if number <= 22 && month == month9
+//{
+//    print("Скорпион")
+//}
+//else if number >= 23 && number<=31 && month == month8
+//{
+//    print("Скорпион")
+//}
+//
+//
+//else if number <= 21 && month == month10
+//{
+//    print("Стрелец")
+//}
+//else if number >= 22 && number<=30 && month == month9
+//{
+//    print("Стрелец")
+//}
+//
+//
+//else if number <= 19 && month == month11
+//{
+//    print("Козерог")
+//}
+//else if number >= 22 && number<=31 && month == month10
+//{
+//    print("Козерог")
+//}
+//
+//
+//else if number <= 19 && month == month12
+//{
+//    print("Водолей")
+//}
+//else if number >= 20 && number<=31 && month == month1
+//{
+//    print("Водолей")
+//}
+
+
+
+
+
+//2)Составить программу одобрения выдачи кредита. Пользователь должен вводить свою зарплату, cумму кредита, кол-во лет от 1 до 3. За 1 год начисляется 30% к сумме кредита, 2 - 15%, 3 - 10%. Распределить фиксированную ежемесячную оплату и проверить является ли ежемесячная оплата больше 50% зарплаты. Если больше, одобряется кредит, если нет, то отклоняется. Использовать в задаче оба условных конструктора.
+
+//
+//print("Введите зарплату:")
+//var zplata = Int(readLine()!)!
+//
+//print("Введите cумму кредита:")
+//var kredit = Int(readLine()!)!
+//
+//print("Введите количество лет:")
+//var year = Int(readLine()!)!
+//
+//switch year{
+//case 1:
+//    let res=kredit/100*30
+//    let result = res+kredit
+//    print(result)
+//    
+//    let zp2 = res/2
+//    if zplata >= zp2{
+//        print("Вы получаете кредит в сумме \(kredit)")
+//              }
+//    else if zplata < zp2{
+//        print("Вы не можете получить кредить")
+//    }
+//case 2:
+//    let res=kredit/100*15
+//    let result = res+kredit
+//    print(result)
+//    let zp2 = result/2
+//    if zplata >= zp2{
+//        print("Вы получаете кредит в сумме \(kredit)")
+//              }
+//    else if zplata < zp2{
+//        print("Вы не можете получить кредить")
+//    }
+//case 3:
+//    let res=kredit/100*10
+//        let result = res+kredit
+//        print(result)
+//        let zp2 = res/2
+//        if zplata >= zp2{
+//            print("Вы получаете кредит в сумме \(kredit)")
+//                  }
+//        else if zplata < zp2{
+//            print("Вы не можете получить кредить!")
+//        }
+//default:
+//    print("Введите числа от 1 до 3")
+//}
+
+
+
+
+
+
+
+//Доп задания (не обязательны к выполнению):
+//1) Пользователь вводит целое число. Программа должна ответить, четным или нечетным является это число.
+
+//print("Введите целое число:")
+//
+//var num = Int(readLine()!)!
+//if num%2==0{
+//    print("Число является четным")
+//}
+//else{
+//    print("Число является четным")
+//}
+
+
+// 2)Пользователь вводит целое число. Если оно является четным и при этом не находится между 10 и 20, то вывести на экран его квадрат. В противном случае напечатать исходное число.
+
+
+//print("Введите целое число:")
+//var num = Int(readLine()!)!
+//if num%2==0{
+//    if num>=10 && num<=20{
+//        print(num)
+//    }
+//    else
+//    {
+//        let result = num*num
+//        print(result)
+//    }
+//}
+//else{
+//    print("Число является нечетным")
+//}
+
+
+//3) Пользователь вводит коэффициенты а, b и с квадратного уравнения ах2 + bх + с = 0. Вывести на экран все корни этого уравнения или сообщение о том, что их нет. Отдельно рассмотреть случай, когда корни совпадают.
+//
+//var a = Double(readLine()!)!
+//var b = Double(readLine()!)!
+//var c = Double(readLine()!)!
+//let D = sqrt(b*b-4*a*c)
+//if D<0 {
+//    print("Корней нет!")
+//}
+//else if D==0{
+//    print("Уравнение имеет только 1 корень!")
+//    let result = (-b+D)/2*a
+//    print(result)
+//}
+//else if D>0{
+//    print("Уравнение имеет 2 корня!")
+//    let result = (-b+D)/2*a
+//    print("Первый корень:\(result)")
+//    let result1 = (-b-D)/2*a
+//    print("Второй корень:\(result1)")
+//}
+//else {
+//    print("Error")
+//}
+//
+
+
