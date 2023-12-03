@@ -1,0 +1,157 @@
+//
+//  main.swift
+//  Home7
+//
+//  Created by A LINA on 23/11/23.
+//
+
+import Foundation
+
+
+//Создайте несколько переменных для хранения анкетных данных: имя, фамилия, возраст, номер телефона. Сделайте возраст и номер телефона опциональными, так как эти данные могут быть не предоставлены. Сделайте 4 readline() для ввода данных. Если данные введены, то присвоить значения с readline(), если не были введены, то присвоить nil. Вывести все значения переменных, обработать там где nil 5 способами. Если nil, то вывести текст "Данные не были предоставлены"
+var name:String?="Alina"
+var surname:String?="Akbaralieva"
+var age:Int?=Int(readLine()!)
+var telNumber:Int?=Int(readLine()!)
+
+           ///name
+////1.force unwrapping-принудительно достать
+print(name!)
+////2.nil coleascing-заменить на какое-то значение вместо отсутствия
+print(name ?? "Данные не были предоставлены")
+//3.проверка на nil условным оператороми
+if name != nil{
+    print(name!)
+}
+else{
+    print("Данные не были предоставлены")
+}
+
+
+//4.if let конструкция, optional binding
+if let name=name{
+    print(name)
+}
+else{
+    print("Данные не были предоставлены")
+}
+
+//5.optional bindings
+func checkName(){
+  guard  let name=name else{
+        print("Данные не были предоставлены")
+      return
+    }
+    print(name)
+}
+checkName()
+
+                      //surname
+            
+//1.
+print(surname!)
+//2.
+print(surname ?? "")
+
+//3.
+if  surname != nil{
+    print(surname!)
+}else{
+    print("Данные не были предоставлены")
+}
+
+//4.
+if let surname=surname{
+    print(surname)
+}
+else{
+    print("Данные не были предоставлены")
+}
+//5.
+
+func checkSurname(){
+    guard let surname=surname else{
+        print("Данные не были предоставлены")
+        return
+    }
+    print(surname)
+}
+checkSurname()
+
+
+               //age
+
+//1
+//print(age!)
+//2.
+print(age ?? "")
+
+//3.
+if age != nil
+{
+    print(age!)
+}
+else{
+    print("Данные не были предоставлены")
+}
+
+
+//4.
+if let age=age{
+    print(age)
+}
+else{
+    print("Данные не были предоставлены")
+}
+
+
+//5.
+
+func checkAge(){
+    guard let age=age else
+        
+    {
+        print("Данные не были предоставлены")
+        return
+    }
+    print(age)
+}
+  
+
+
+               //telNumber
+//1.
+//print(telNumber!)
+
+//2.
+print(telNumber ?? " ")
+
+
+//3.
+if telNumber != nil{
+    print(telNumber!)
+}else
+{
+    print("Данные не были предоставлены")
+}
+
+
+//4.
+if let telNumber=telNumber{
+    print(telNumber)
+}else{
+    print("Данные не были предоставлены")
+}
+
+
+//5.
+func checktelNumber(){
+    guard let telNumber=telNumber else{
+        print("Данные не были предоставлены")
+        return
+    }
+    print(telNumber)
+}
+
+
+
