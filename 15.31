@@ -1,0 +1,19 @@
+func findGCD(_ a: Int, _ b: Int) -> Int {
+    var num1 = a
+    var num2 = b
+    
+    while num2 != 0 {
+        let remainder = num1 % num2
+        num1 = num2
+        num2 = remainder
+    }
+    
+    return num1
+}
+
+// Пример использования
+let number1 = 48
+let number2 = 18
+let gcd = findGCD(number1, number2)
+
+print("Наибольший общий делитель чисел \(number1) и \(number2) равен \(gcd)")
