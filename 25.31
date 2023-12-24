@@ -1,0 +1,20 @@
+func firstUniqChar(_ s: String) -> Int {
+    var charFrequency = [Character: Int]()
+
+    for char in s {
+        charFrequency[char, default: 0] += 1
+    }
+
+    for (index, char) in s.enumerated() {
+        if charFrequency[char] == 1 {
+            return index
+        }
+    }
+
+    return -1
+}
+
+// Example usage:
+let inputString = "leetcode"
+let result = firstUniqChar(inputString)
+print(result) // Output: 0
